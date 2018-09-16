@@ -120,7 +120,9 @@ function characterCards(divID) {
 // function render() {
 
 //     $(".hero").remove().appendTo("#heroRow");
+
 //     $(".enemy").remove().appendTo("#enemyRow");
+
 //     $(".currentEnemy").remove().appendTo("#currentEnemyRow");
 
 // };
@@ -128,35 +130,57 @@ function characterCards(divID) {
 // $(".card").click(function() {
 
 //      // Stores the character the user has clicked on in the player variable and removes it from charArray
+
 //      if (!playerSelected) {
+
 //         for (var i = 0; i < charArray.length; i++) {
+
 //             if (charArray[i].name == (this).id) {
+
 //                 player = charArray[i]; // sets current player
-//                 // playAudio(); // starts theme song
+
 //                 setBaseAttack(player);
+
 //                 charArray.splice(i, 1);
+
 //                 playerSelected = true;
+
 //                 $(this).removeClass("enemy").addClass("hero");
+
 //                 console.log(this)
+
 //                 render();
                 
 //             }
 //         }
         // updatePics("#game", "#defendersLeftDiv");
+
         // $("#playerDiv").append(this); // appends the selected player to the div
+
         // $("#playerDiv").addClass("animated zoomIn");
+
         // $("#playerDiv").append(player.name);
+
         // $("#playerHealthDiv").append("HP: " + player.healthPoints);
+
         // $("#playerHealthDiv").addClass("animated zoomIn");
     // }
     // // Stores the defender the user has clicked on in the defender variable and removes it from the charArray
+
     // // if (playerSelected && !defenderSelected && (this.id != player.name)) {
+
     // //     for (var j = 0; j < charArray.length; j++) {
+
     // //         if (charArray[j].name == (this).id) {
+
     // //             defender = charArray[j]; // sets defender
+
     // //             charArray.splice(j, 1);
+
     // //             defenderSelected = true;
+
     // //             $(this).addClass("currentEnemy");
+
     // //             foeChosen();
     
     // //         }
@@ -210,38 +234,20 @@ $("#attackBtn").click(function() {
 // $("#attackBtn").click(function() {
 
 //     if (playerSelected && defenderSelected) {
+
 //         if (isAlive(player) && isAlive(defender)) {
+
 //             player.attack(defender);
+
 //             defender.counterAttack(player);
+
 //             $("#playerHealthDiv").html("HP: " + player.healthPoints);
+
 //             $("#defenderHealthDiv").html("HP: " + defender.healthPoints);
-//             if (!isAlive(defender)) {
-//                 $("#defenderHealthDiv").html("DEFETED!");
-//                 $("#playerHealthDiv").html("Enemy defeated!");
-//                 $("#msg").html("Pick another enemy to battle...");
+
 //             }
-//             if (!isAlive(player)) {
-//                 $("#playerHealthDiv").html("YOU LOST!");
-//                 $("#msg").html("Try again...");
-//                 $("#attackBtn").html("Restart Game");
-//                 $(document).on("click", "#attackBtn", function () { // restarts game
-//                     location.reload();
-//                 });
-//             }
-//         }
-//         if (!isAlive(defender)) {
-//             $("#defenderDiv").removeClass("animated zoomInRight");
-//             $("#defenderHealthDiv").removeClass("animated zoomInRight");
-//             $("#defenderDiv").children().remove();
-//             $("#defenderDiv").html("");
-//             $("#defenderHealthDiv").html("");
-//             defenderSelected = false;
-//             if (isWinner()) {
-//                 $("#secondScreen").hide();
-//                 $("#globalMsg").show();
-//             }
-//         }
-//     }
+//      }
+//         
 // });
 
 // function charChosen() {
