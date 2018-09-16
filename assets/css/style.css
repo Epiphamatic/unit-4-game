@@ -1,0 +1,130 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(starjhol.ttf);
+}
+
+.row {
+    min-height: 25vh;
+}
+
+.minHeight {
+    min-height: 120vh;
+}
+
+#title {
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 12vh;
+    color: yellow;
+    text-align: center;
+}
+
+.pixelFont {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.sectionHeadings {
+    font-size: 22px;
+    color: white;
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
+.card-width {
+    width: 12vw;
+    margin-right: 20px;
+}
+
+.card-picture-top {
+    height: 15vh;
+}
+
+.card-pic {
+    height: 100%;
+    padding-top: 5px;
+}
+
+#darthVader {
+    background-color: rgba(41, 35, 35, 0.884);
+}
+
+#jabba {
+    background-color: rgba(26, 199, 26, 0.76);
+}
+
+#boba {
+    background-color: rgba(3, 87, 3, 0.901);
+}
+
+#ewok {
+    background-color: rgba(179, 103, 16, 0.87);
+}
+
+.cardHover {
+animation: MoveUpDown 3.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    
+    0%, 100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+}
+
+.narrative {
+    height: 80vh;
+    width: 20vw;
+    position: fixed;
+    right: 1vw;
+    top: 5vh;
+    background: rgba(14, 186, 230, 0.582);
+    border: solid 2px rgba(43, 188, 255, 0.671);
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.bottomText {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+    overflow: auto;
+}
+
+#attackBtn {
+    width: 20vw;
+    position: fixed;
+    right: 1vw;
+    bottom: 8vh;
+    font-size: 20px;
+
+}
+
+#restartBtn {
+    width: 20vw;
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+    font-size: 20px;
+
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 1px;
+    margin-left: 5px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(43, 188, 255, .2), rgba(43, 188, 255, 0.85), rgba(43, 188, 255, 0.2));
+}
